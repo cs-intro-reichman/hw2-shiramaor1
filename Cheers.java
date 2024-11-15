@@ -8,7 +8,7 @@ public class Cheers {
             for (int i = 0; i < upperCheers.length(); i++) {
                 char currentChar = upperCheers.charAt(i);
                 if (specialChars.indexOf(currentChar) == -1) {
-                   System.out.println("Give me a " + upperCheers.charAt(i) + ": " + currentChar + "!" );    
+                   System.out.println("Give me a  " + upperCheers.charAt(i) + ": " + currentChar + "!" );    
                 } else {
                    System.out.println("Give me an " + upperCheers.charAt(i) + ": " + currentChar + "!" );    
                 }     

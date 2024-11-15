@@ -14,7 +14,7 @@ public class Collatz {
 					a = a * 3 + 1;
 				}
 				times++;
-				runs = runs + " " + a;
+				runs = runs + " " + a + " ";
 			}
 			if ( mode.equals("v")) {
 				System.out.println(runs + "(" + times + ")"); 
