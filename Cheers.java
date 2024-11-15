@@ -3,18 +3,19 @@ public class Cheers {
         public static void main(String[] args) {
 	    String cheers = args [0];
             int times = Integer.parseInt(args[1]);
-            String specialChar = "AEFHILMNORSX";
-            for (int i = 0; i < cheers.length(); i++) {
-                char firstChar = cheers.charAt(i);
-                if (firstChar == specialChar.indexOf(firstChar)) {
-                   System.out.println("Give me an " + cheers.charAt(i) + ": " + firstChar + "!" );    
+            String upperCheers = cheers.toUpperCase(); 
+            String specialChars = "AEFHILMNORSX";
+            for (int i = 0; i < upperCheers.length(); i++) {
+                char currentChar = upperCheers.charAt(i);
+                if (specialChars.indexOf(currentChar) == -1) {
+                   System.out.println("Give me a " + upperCheers.charAt(i) + ": " + currentChar + "!" );    
                 } else {
-                   System.out.println("Give me a " + cheers.charAt(i) + ": " + firstChar + "!" );    
+                   System.out.println("Give me an " + upperCheers.charAt(i) + ": " + currentChar + "!" );    
                 }     
             }
             System.out.println("What does that spell?");
             for (int i = 0; i < times; i++) {
-                System.out.println(cheers + "!!!");
+                System.out.println(upperCheers + "!!!");
             }
                
         }
