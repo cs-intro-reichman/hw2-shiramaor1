@@ -6,7 +6,8 @@ public class Collatz {
 		for ( int i = 1; i <= N; i++ ) {
 			int a = i; 
 			int times = 1;
-			String runs = "" + a; 
+			String runs = "" + a + " "; 
+			
 			while (a != 1 || times == 1) {
 				if ( a % 2 == 0){
 					a = a / 2;
